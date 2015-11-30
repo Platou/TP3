@@ -8,9 +8,6 @@
 using namespace sf;
 using namespace std;
 
-//La fenêtre principale
-//http://www.sfml-dev.org/tutorials/2.3/window-window-fr.php
-//Deux options supplémentaires: Image fixe et plein écran
 RenderWindow mainWin(VideoMode(LARGEUR, HAUTEUR, 32), "Circle Beat!");
 View view(mainWin.getDefaultView());
 
