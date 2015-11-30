@@ -11,7 +11,7 @@ using namespace std;
 //La fenêtre principale
 //http://www.sfml-dev.org/tutorials/2.3/window-window-fr.php
 //Deux options supplémentaires: Image fixe et plein écran
-RenderWindow mainWin(VideoMode(LARGEUR, HAUTEUR, 32), "Circle Beat!");// , Style::Titlebar); / , Style::FullScreen);
+RenderWindow mainWin(VideoMode(LARGEUR, HAUTEUR, 32), "Circle Beat!");
 View view(mainWin.getDefaultView());
 
 Event event;
@@ -37,10 +37,7 @@ int main()
 
 void Init()
 {
-	//Synchonisation coordonnée à l'écran!  Normalement 60 frames par secondes
-	//À faire absolument
-	mainWin.setVerticalSyncEnabled(true);
-	//mainWin.setFramerateLimit(60);  //Équivalent
+	mainWin.setFramerateLimit(60);
 }
 
 void GetInputs()
